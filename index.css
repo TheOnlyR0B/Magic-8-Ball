@@ -1,0 +1,8 @@
+body {
+    background-color: grey;
+}
+header {
+    border-bottom: 5px dashed purple;
+    display: flex;
+    
+}
