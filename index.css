@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(47, 47, 47); 
 }
 header {
     border-bottom: 5px dashed purple;
@@ -25,4 +25,31 @@ header {
 }
 #credits {
     margin-top: 5px;
+}
+#main_icons {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 80px;
+
+}
+#eight_ball {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+#answer-display {
+    color: white;
+}
+#white_circle {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+    
 }
