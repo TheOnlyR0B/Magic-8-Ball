@@ -32,24 +32,35 @@ header {
     width: 200px;
     margin: 0 auto;
     align-items: center;
+    justify-content: center;
     margin-top: 80px;
-
 }
 #eight_ball {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 300px;
     height: 300px;
     background-color: black;
     border-radius: 100%;
     margin-bottom: 20px;
+    position: relative;
 }
 
 #answer-display {
-    color: white;
+    position: relative;
+    color: black;
+}
+#image_div {
+    position: absolute;
+    margin: 0 auto;
 }
 #white_circle {
+    position: relative;
     width: 150px;
     height: 150px;
     background-color: white;
     border-radius: 100%;
-    
+    margin: 0 auto;
+    visibility: hidden;
 }
