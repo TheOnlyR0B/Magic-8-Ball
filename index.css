@@ -1,8 +1,23 @@
 body {
-    background-color: grey;
+ background-color: rgb(47, 47, 47);
 }
 header {
     border-bottom: 5px dashed purple;
     display: flex;
-    
+    /* flex-direction: row;  */
+    justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.628) ;
+}
+#slogan {
+margin-right: 170px;
+font-size: 30px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#help {
+    margin-bottom: 10px;
+}
+#credits {
+margin-top: 5px;
 }
