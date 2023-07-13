@@ -57,10 +57,17 @@ header {
 }
 #white_circle {
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     background-color: white;
     border-radius: 100%;
     margin: 0 auto;
     visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#answer-display {
+    margin: auto;
 }
