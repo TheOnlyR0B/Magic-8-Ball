@@ -26,6 +26,10 @@ const answers = [
     const answer = answers[index];
   
     const answerDisplay = document.getElementById("answer-display");
+    const answerDiv = document.getElementById("white_circle");
+    const eightBallDiv = document.getElementById("image_div");
+    answerDiv.style.visibility = 'visible';
+    eightBallDiv.style.visibility = 'hidden';
     answerDisplay.textContent = answer;
   }
   
