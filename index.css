@@ -13,24 +13,19 @@ body {
 }
 body {
     transition: background-color 0.3s ease;
-  }
+}
   
-  body.dark-theme {
+body.dark-theme {
     background-color: rgb(47, 47, 47);
-  }
+}
   
-  body.light-theme {
+body.light-theme {
     background-color: rgb(255, 255, 255);
-  }
+}
   
-header {
-    border-bottom: 5px dashed purple;
-    position: relative;
+#switch_dark_light {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: purple;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.628) ;
+    z-index: 9999;
 }
 #slogan {
     font-size: 30px;
@@ -128,5 +123,14 @@ header {
 
 #switch_dark_light button img {
     display: block;
+}
+#headerDiv {
+    display: flex;
+    border-bottom: 5px dashed purple;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.628) ;
 }
     
