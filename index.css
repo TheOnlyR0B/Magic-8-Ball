@@ -64,3 +64,25 @@ header {
     margin: 0 auto;
     visibility: hidden;
 }
+#question {
+    margin-top: 25px;
+}
+#button {
+    background-color: rgba(0, 0, 255, 0);
+    border: 0;
+    cursor: pointer;
+
+}
+#button img {
+    width: 70px;
+    height: 70px;
+    border: 5px solid transparent;
+    transition-property: width, height;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+#button:hover img {
+    width: 90px;
+    height: 90px;
+}
