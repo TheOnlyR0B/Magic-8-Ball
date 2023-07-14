@@ -1,6 +1,28 @@
 body {
     background-color: rgb(47, 47, 47); 
 }
+@media (prefers-color-scheme: dark) { 
+    body {
+        background-color: rgb(47, 47, 47); 
+    }
+}
+@media (prefers-color-scheme: light) { 
+    body {
+        background-color: rgb(255, 255, 255); 
+    }
+}
+body {
+    transition: background-color 0.3s ease;
+  }
+  
+  body.dark-theme {
+    background-color: rgb(47, 47, 47);
+  }
+  
+  body.light-theme {
+    background-color: rgb(255, 255, 255);
+  }
+  
 header {
     border-bottom: 5px dashed purple;
     position: relative;
@@ -72,14 +94,14 @@ header {
 }
 #button {
     background-color: rgba(0, 0, 255, 0);
-    border: 0;
+    border: none;
     cursor: pointer;
-
+    outline: none;
 }
+
 #button img {
     width: 70px;
     height: 70px;
-    border: 5px solid transparent;
     transition-property: width, height;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
@@ -91,4 +113,20 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: none;
 }
+#switch_dark_light button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#switch_dark_light button:focus {
+    outline: none;
+}
+
+#switch_dark_light button img {
+    display: block;
+}
+    

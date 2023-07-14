@@ -6,11 +6,16 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="index.css" />
 </head>
-<body>
+<body class="dark-theme">
 <header>
     <div id="Icons">
         <div id="switch_dark_light">
-            <a> <img src="Dark_mode.png" alt="Dark mode" width="100" height="100"> <img src="light.png" width="100" height="100"> </a>
+            <button onclick="toggleDarkLightMode('dark')">
+                <img src="Dark_mode.png" alt="Dark mode" width="100" height="100">
+            </button>
+            <button onclick="toggleDarkLightMode('light')">
+                <img src="light.png" width="100" height="100">
+            </button>
             <img id="help" src="Help.png" width="75" height="75"> 
         </div>
     </div>
@@ -31,12 +36,13 @@
         </div>
     </div>
 
-    <button type="button" id="button" onclick="getAnswers()">
+    <button disabled type="button" id="button" onclick="getAnswers()">
         <img src="55008.png" />
     </button>
-    <input type="text" id="question" name="question">
+
+    <input onchange="question_change(this)" type="text" id="question" name="question">
     
-    </body>
-    <script src="script.js">
-    </script>
+</div>
+<script src="script.js"></script>
+</body>
 </html>

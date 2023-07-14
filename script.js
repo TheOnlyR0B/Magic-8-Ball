@@ -32,4 +32,25 @@ const answers = [
     eightBallDiv.style.visibility = 'hidden';
     answerDisplay.textContent = answer;
   }
+  function question_change(question) {
+    const button = document.getElementById("button");
   
+    if (question.value.trim() !== "") {
+      button.disabled = false; // enable the button
+    } else {
+      button.disabled = true; // disable the button
+    }
+  }  
+
+  function toggleDarkLightMode(mode) {
+    const body = document.body;
+    console.log(mode);
+    if (mode === 'dark') {
+      body.classList.remove("light-theme");
+      body.classList.add("dark-theme");
+    } else if (mode === 'light') {
+      body.classList.remove("dark-theme");
+      body.classList.add("light-theme");
+    }
+  }
+
