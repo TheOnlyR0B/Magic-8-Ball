@@ -43,14 +43,13 @@ const answers = [
   }  
 
   function toggleDarkLightMode(mode) {
-    const body = document.body;
     console.log(mode);
-    if (mode === 'dark') {
-      body.classList.remove("light-theme");
-      body.classList.add("dark-theme");
-    } else if (mode === 'light') {
-      body.classList.remove("dark-theme");
-      body.classList.add("light-theme");
+    if(mode==="dark") {
+      document.body.classList.remove("light-theme");
+      document.body.classList.add("dark-theme");
+    } else {
+      document.body.classList.remove("dark-theme");
+      document.body.classList.add("light-theme");
     }
   }
 
