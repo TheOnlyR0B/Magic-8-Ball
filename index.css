@@ -1,14 +1,31 @@
 body {
     background-color: rgb(47, 47, 47); 
 }
-header {
-    border-bottom: 5px dashed purple;
-    position: relative;
+@media (prefers-color-scheme: dark) { 
+    body {
+        background-color: rgb(47, 47, 47); 
+    }
+}
+@media (prefers-color-scheme: light) { 
+    body {
+        background-color: rgb(255, 255, 255); 
+    }
+}
+body {
+    transition: background-color 0.3s ease;
+}
+  
+body.dark-theme {
+    background-color: rgb(47, 47, 47);
+}
+  
+body.light-theme {
+    background-color: rgb(255, 255, 255);
+}
+  
+#switch_dark_light {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: purple;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.628) ;
+    z-index: 9999;
 }
 #slogan {
     font-size: 30px;
@@ -21,7 +38,7 @@ header {
     text-shadow: 0px 0px 30px rgb(255, 0, 251);
 }
 #help {
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 #credits {
     margin-top: 5px;
@@ -48,8 +65,8 @@ header {
 }
 
 #answer-display {
-    position: relative;
     color: black;
+    margin: auto;
 }
 #image_div {
     position: absolute;
@@ -67,7 +84,80 @@ header {
     flex-direction: column;
     justify-content: center;
 }
+#question {
+    margin-top: 25px;
+    
+}
+#credits {
+    z-index: 9999;
+}
+#button {
+    background-color: rgba(0, 0, 255, 0);
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
 
-#answer-display {
-    margin: auto;
+#button img {
+    width: 70px;
+    height: 70px;
+    transition-property: width, height;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+#button:hover img {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+#switch_dark_light button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#switch_dark_light button:focus {
+    outline: none;
+}
+
+#switch_dark_light button img {
+    display: block;
+}
+#headerDiv {
+    display: flex;
+    border-bottom: 5px dashed purple;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.628) ;
+}
+#reset {
+    background-color: rgba(0, 0, 255, 0);
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#reset img {
+    width: 50px;
+    height: 50px;
+    transition-property: width, height transform;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+#reset:hover img {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    transform: rotate(-360deg);
+    flex-direction: column;
+    justify-content: center;
+    border: none;
 }

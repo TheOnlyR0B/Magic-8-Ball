@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-<header>
-    <div id="Icons">
-        <div id="switch_dark_light">
-            <a> <img src="Dark_mode.png" alt="Dark mode" width="100" height="100"> <img src="light.png" width="100" height="100"> </a>
-            <img id="help" src="Help.png" width="75" height="75"> 
-        </div>
+<script src="script.js"></script>
+<div id="headerDiv">
+    <div id="switch_dark_light">
+        <button onclick="toggleDarkLightMode('dark')">
+            <img src="Dark_mode.png" alt="Dark mode" width="100" height="100">
+        </button>
+        <button onclick="toggleDarkLightMode('light')">
+            <img src="light.png" width="100" height="100">
+        </button>
+        <img id="help" src="Help.png" width="75" height="75"> 
     </div>
     <div id="slogan">
         <h1> The Magic 8-Ball </h1>               
@@ -20,7 +24,7 @@
     <div id="credits">
         <img src="Credits.png" width="75" height="75">
     </div>
-</header>
+</div>
 <div id="main_icons">
     <div id="eight_ball">
         <div id="image_div">
@@ -30,11 +34,14 @@
             <p id="answer-display"></p>
         </div>
     </div>
-    <div id="insert"> 
-        <input type="text" id="question" name="question">
-        <input type="submit" value="Ask" onclick="getAnswers()">
-      </div>
-    </body>
-    <script src="script.js">
-    </script>
+
+    <button disabled type="button" id="button" onclick="getAnswers()">
+        <img src="55008.png" />
+    </button>
+    <input onchange="question_change(this)" type="text" id="question" name="question" placeholder="Insert a question!">
+    <button type="button" id="reset" onclick="clearInput()">
+        <img src="reset-filter.png" width="50px" height="50px">
+    </button>
+</div>
+</body>
 </html>
