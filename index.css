@@ -38,13 +38,16 @@ body.light-theme {
 }
 
 #overlayBox {
-    background-color: #b6b6b6;
+    background-color:#c9c9c9;
     width: 300px;
-    margin: 200px;
+    margin: 570px;
+    margin-bottom: 16px;
+    margin-top: 150px;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+    line-height: 20px;
+    font-size: 15px;
     z-index: 10000;
+    padding: 20px;
   }
 
 button {
@@ -60,7 +63,7 @@ button {
     cursor: pointer;
     z-index: 10001;
     position:relative;
-    left: 270px;
+    left: 640px;
     right:70px;
   }
 
