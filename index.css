@@ -62,7 +62,6 @@ button {
     margin: 5px 2px;
     cursor: pointer;
     z-index: 10001;
-    position:relative;
     left: 640px;
     right:70px;
   }
