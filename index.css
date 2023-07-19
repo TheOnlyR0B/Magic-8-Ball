@@ -61,7 +61,6 @@ button {
     font-size: 16px;
     margin: 5px 2px;
     cursor: pointer;
-    z-index: 10001;
     left: 640px;
     right:70px;
   }
@@ -193,6 +192,10 @@ button {
     transition-property: width, height transform;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
+}
+
+#hideOverlay {
+    position: relative;
 }
 
 #reset:hover img {
