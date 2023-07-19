@@ -1,5 +1,5 @@
 const answers = [
-    "It is certain.",
+    {"key": "It is certain.", "type": "positive"},
     "It is decidedly so.",
     "Without a doubt.",
     "Yes definitely.",
@@ -20,6 +20,10 @@ const answers = [
     "Outlook not so good",
     "Very doubtful"
   ];
+
+  function setSession() {
+  
+  }
   
   function getAnswers() {
     const index = Math.floor(Math.random() * answers.length);
@@ -30,7 +34,7 @@ const answers = [
     const eightBallDiv = document.getElementById("image_div");
     answerDiv.style.visibility = 'visible';
     eightBallDiv.style.visibility = 'hidden';
-    answerDisplay.textContent = answer;
+    answerDisplay.textContent = answer.key;
   }
   function question_change(question) {
     const button = document.getElementById("button");
