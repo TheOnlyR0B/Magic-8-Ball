@@ -137,7 +137,6 @@ button {
     background-color: rgba(0, 0, 255, 0);
     border: none;
     cursor: pointer;
-    outline: none;
 }
 
 #button img {
@@ -163,10 +162,6 @@ button {
     padding: 0;
 }
 
-#switch_dark_light button:focus {
-    outline: none;
-}
-
 #switch_dark_light button img {
     display: block;
 }
@@ -183,7 +178,6 @@ button {
     background-color: rgba(0, 0, 255, 0);
     border: none;
     cursor: pointer;
-    outline: none;
     margin-top: 10px;
 }
 
@@ -207,4 +201,8 @@ button {
     flex-direction: column;
     justify-content: center;
     border: none;
+}
+
+.fokus:focus {
+    border: solid 2px rgb(0, 54, 204);
 }
