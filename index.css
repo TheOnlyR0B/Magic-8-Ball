@@ -25,6 +25,8 @@ body.light-theme {
   
 #overlay {
     visibility: hidden;
+    display: flex;
+    flex-direction: column;
     position: fixed; 
     width: 100%;
     height: 100%;
@@ -40,9 +42,8 @@ body.light-theme {
 #overlayBox {
     background-color:#c9c9c9;
     width: 300px;
-    margin: 570px;
+    margin: auto;
     margin-bottom: 16px;
-    margin-top: 150px;
     text-align: center;
     line-height: 20px;
     font-size: 15px;
@@ -61,8 +62,7 @@ button {
     font-size: 16px;
     margin: 5px 2px;
     cursor: pointer;
-    left: 640px;
-    right:70px;
+
   }
 
 #switch_dark_light {
@@ -191,6 +191,9 @@ button {
 
 #hideOverlay {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
 }
 
 #reset:hover img {
