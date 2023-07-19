@@ -28,6 +28,7 @@ const answers = [
   function getAnswers() {
     const index = Math.floor(Math.random() * answers.length);
     const answer = answers[index];
+    var questionValue = "";
   
     const answerDisplay = document.getElementById("answer-display");
     const answerDiv = document.getElementById("white_circle");
@@ -35,10 +36,20 @@ const answers = [
     answerDiv.style.visibility = 'visible';
     eightBallDiv.style.visibility = 'hidden';
     answerDisplay.textContent = answer.key;
+    if (localStorage.statistics) {
+      const result = localStorage.statistics.filter(statistic => statistic.question === questionValue);
+      if (result) {
+        result.answers.push(answer);
+      } else {
+        localStorage.statistics.push({"question": questionValue, answers: [answer]});
+      }
+    } else {
+      localStorage.statistics = [{"question": questionValue, answers: [answer]}];
+    }
   }
   function question_change(question) {
     const button = document.getElementById("button");
-  
+    questionValue = question.value;
     if (question.value.trim() !== "") {
       button.disabled = false; // enable the button
     } else {
