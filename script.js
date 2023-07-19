@@ -86,6 +86,7 @@ const answers = [
 
   function checkCookie() {
     var overlayCookie = getCookie('showOverlay');
+    console.log(overlayCookie);
     if(overlayCookie==="1") {
       document.getElementById("overlay").style.visibility="hidden";
       document.getElementById("overlayBox").style.visibility="hidden";
@@ -101,6 +102,7 @@ const answers = [
     } 
 
     function hideOverlay() {
+      setCookie("showOverlay", "1", 30);
       document.getElementById("overlay").style.visibility="hidden";
       document.getElementById("overlayBox").style.visibility="hidden";
       document.getElementById("hideOverlay").style.visibility="hidden";  //Overlay is show when there is no Cookie
@@ -120,4 +122,11 @@ const answers = [
       }
     }
     return "";
+  }
+
+  function setCookie(cname,cvalue,exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
