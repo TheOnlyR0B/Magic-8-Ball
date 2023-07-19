@@ -11,10 +11,10 @@
 <script src="script.js"></script>
 <div id="headerDiv">
     <div id="switch_dark_light">
-        <button onclick="toggleDarkLightMode('dark')">
+        <button onclick="toggleDarkLightMode('dark')" id="darky" tabindex="0">
             <img src="Dark_mode.png" alt="Dark mode" width="100" height="100">
         </button>
-        <button onclick="toggleDarkLightMode('light')">
+        <button onclick="toggleDarkLightMode('light')" id="lighty" tabindex="0">
             <img src="light.png" width="100" height="100">
         </button>
         <img id="help" src="Help.png" width="75" height="75"> 
@@ -36,11 +36,11 @@
         </div>
     </div>
 
-    <button disabled type="button" id="button" onclick="getAnswers()">
+    <button disabled type="button" id="button" onclick="getAnswers()" tabindex="0">
         <img src="55008.png" />
     </button>
-    <input onchange="question_change(this)" type="text" id="question" name="question" placeholder="Insert a question!">
-    <button type="button" id="reset" onclick="clearInput()">
+    <input onchange="question_change(this)" type="text" id="question" name="question" placeholder="Insert a question!" tabindex="0">
+    <button type="button" id="reset" onclick="clearInput()" tabindex="0">
         <img src="reset-filter.png" width="50px" height="50px">
     </button>
 </div>

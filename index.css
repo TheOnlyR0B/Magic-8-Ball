@@ -142,6 +142,7 @@ body.light-theme {
     border: none;
     cursor: pointer;
     outline: none;
+    margin-top: 10px;
 }
 
 #reset img {
@@ -160,4 +161,19 @@ body.light-theme {
     flex-direction: column;
     justify-content: center;
     border: none;
+}
+#reset:focus {
+    border: solid 2px rgb(0, 54, 204);
+}
+#button:focus {
+    border: solid 2px rgb(0, 54, 204);
+}
+#question:focus {
+    border: solid 1px rgb(0, 54, 204);
+}
+#darky:focus {
+    border: solid 2px rgb(0, 54, 204);
+}
+#lighty:focus {
+    border: solid 2px rgb(0, 54, 204);
 }
