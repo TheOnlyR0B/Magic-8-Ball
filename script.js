@@ -28,28 +28,31 @@ const answers = [
   function getAnswers() {
     const index = Math.floor(Math.random() * answers.length);
     const answer = answers[index];
-    var questionValue = "";
   
     const answerDisplay = document.getElementById("answer-display");
     const answerDiv = document.getElementById("white_circle");
     const eightBallDiv = document.getElementById("image_div");
+    var questionValue = document.getElementById("question");
     answerDiv.style.visibility = 'visible';
     eightBallDiv.style.visibility = 'hidden';
     answerDisplay.textContent = answer.key;
     if (localStorage.statistics) {
-      const result = localStorage.statistics.filter(statistic => statistic.question === questionValue);
-      if (result) {
-        result.answers.push(answer);
+      const localArray = JSON.parse(localStorage.statistics);
+      const result = localArray.filter(statistic => statistic.question === questionValue.value);
+      if (result && result.length > 0) {
+        result[0].answers.push(answer);
       } else {
-        localStorage.statistics.push({"question": questionValue, answers: [answer]});
+        localArray.push({"question": questionValue.value, answers: [answer]});
+        console.log(questionValue.value);
       }
+      localStorage.statistics = JSON.stringify(localArray);
     } else {
-      localStorage.statistics = [{"question": questionValue, answers: [answer]}];
+      statistic = [{"question": questionValue.value, answers: [answer]}];
+      localStorage.statistics =  JSON.stringify(statistic);
     }
   }
   function question_change(question) {
     const button = document.getElementById("button");
-    questionValue = question.value;
     if (question.value.trim() !== "") {
       button.disabled = false; // enable the button
     } else {
