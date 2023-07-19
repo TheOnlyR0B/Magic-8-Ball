@@ -95,7 +95,6 @@ body.light-theme {
     background-color: rgba(0, 0, 255, 0);
     border: none;
     cursor: pointer;
-    outline: none;
 }
 
 #button img {
@@ -121,10 +120,6 @@ body.light-theme {
     padding: 0;
 }
 
-#switch_dark_light button:focus {
-    outline: none;
-}
-
 #switch_dark_light button img {
     display: block;
 }
@@ -141,7 +136,6 @@ body.light-theme {
     background-color: rgba(0, 0, 255, 0);
     border: none;
     cursor: pointer;
-    outline: none;
     margin-top: 10px;
 }
 
@@ -162,18 +156,7 @@ body.light-theme {
     justify-content: center;
     border: none;
 }
-#reset:focus {
-    border: solid 2px rgb(0, 54, 204);
-}
-#button:focus {
-    border: solid 2px rgb(0, 54, 204);
-}
-#question:focus {
-    border: solid 1px rgb(0, 54, 204);
-}
-#darky:focus {
-    border: solid 2px rgb(0, 54, 204);
-}
-#lighty:focus {
+
+.fokus:focus {
     border: solid 2px rgb(0, 54, 204);
 }
