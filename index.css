@@ -142,6 +142,7 @@ body.light-theme {
     border: none;
     cursor: pointer;
     outline: none;
+    margin-top: 10px;
 }
 
 #reset img {
