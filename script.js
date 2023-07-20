@@ -130,3 +130,12 @@ const answers = [
     let expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
+  function showCredits() {
+    document.getElementById("credits_overlay").style.visibility='visible';
+    document.getElementById("credits_box").classList.add('active');
+  } 
+
+  function hideCredits() {
+    document.getElementById("credits_overlay").style.visibility='hidden';
+    document.getElementById("credits_box").classList.remove('active');
+  }
