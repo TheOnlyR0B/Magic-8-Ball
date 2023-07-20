@@ -15,15 +15,7 @@ The game can be started just by running [index.html](index.html) file in a web b
 
 ## Demo
 
-TODO: Add GIF or screenshot at the end of the internship
-
-## Recommended introductions to frontend
-
-- The [Frontend Masters Bootcamp](https://frontendmasters.com/bootcamp/) is a complete crash course, and everything you need to get up and running with HTML, CSS and JavaScript. By completing the coursework contained in the Bootcamp, along with practice, you will be well on your way into the world of web development!
-
-- A Youtube series about [web fundamentals for beginning web makers](https://www.youtube.com/playlist?list=PLo3w8EB99pqLEopnunz-dOOBJ8t-Wgt2g).
-
-- [Web Development for Beginners - A Curriculum](https://microsoft.github.io/Web-Dev-For-Beginners/#/): Learn the fundamentals of JavaScript, CSS, and HTML with our comprehensive 12-week course, brought to you by Microsoft Cloud Advocates.
+<img width="500" alt="8ball-game-preview" src="https://github.com/TheOnlyR0B/Magic-8-Ball/assets/370980/be63ef25-e9b9-45b7-b227-6b7693cb476a">
 
 ## Project Diary
 
@@ -154,7 +146,8 @@ Recommended links:
 Goal: Show some statistics, error handling
 
 What we did: 
-- TODO
+- [Credits Pop-up](https://github.com/TheOnlyR0B/Magic-8-Ball/issues/16)
+- [presenting Statistics](https://github.com/TheOnlyR0B/Magic-8-Ball/issues/15)
 
 ---
 
@@ -163,3 +156,13 @@ What we did:
 TODO
 
 Recommended links: TODO
+
+---
+
+## Recommended introductions to frontend
+
+- The [Frontend Masters Bootcamp](https://frontendmasters.com/bootcamp/) is a complete crash course, and everything you need to get up and running with HTML, CSS and JavaScript. By completing the coursework contained in the Bootcamp, along with practice, you will be well on your way into the world of web development!
+
+- A Youtube series about [web fundamentals for beginning web makers](https://www.youtube.com/playlist?list=PLo3w8EB99pqLEopnunz-dOOBJ8t-Wgt2g).
+
+- [Web Development for Beginners - A Curriculum](https://microsoft.github.io/Web-Dev-For-Beginners/#/): Learn the fundamentals of JavaScript, CSS, and HTML with our comprehensive 12-week course, brought to you by Microsoft Cloud Advocates.
