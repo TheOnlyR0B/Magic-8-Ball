@@ -166,3 +166,34 @@ Recommended links: TODO
 - A Youtube series about [web fundamentals for beginning web makers](https://www.youtube.com/playlist?list=PLo3w8EB99pqLEopnunz-dOOBJ8t-Wgt2g).
 
 - [Web Development for Beginners - A Curriculum](https://microsoft.github.io/Web-Dev-For-Beginners/#/): Learn the fundamentals of JavaScript, CSS, and HTML with our comprehensive 12-week course, brought to you by Microsoft Cloud Advocates.
+
+---
+
+## How to easily host your project on Github
+
+Github Pages is an easy and free way to host a simple project online
+
+- For more in-depth instructions you can visit [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+
+- Below is a quick guideline to get your page running quickly:
+
+Configure GitHub Pages:
+
+    - Go to your GitHub repository's Settings tab.
+    - Scroll down to the "GitHub Pages" section.
+    - Under "Source," choose the branch that contains your project files. 
+    - If your project is in the main branch, select "main" or "master" depending on your repository's default branch name.
+    - Click "Save" to apply the changes.
+
+Access your hosted project:
+
+    After saving, GitHub will provide you with a link to access your hosted project. 
+    It will be in the format: https://<username>.github.io/<repository-name>.
+    e.g. https://TheOnlyROB.github.io/Magic-8-Ball/
+
+Wait for the site to build and deploy (usually takes a few seconds to a few minutes).
+
+    - Once the build is complete, your project should be live at the provided URL.
+    - Type the URL manually in the browser, if you don't receive any notifications
+
+  
