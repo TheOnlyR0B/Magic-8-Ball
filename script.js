@@ -21,9 +21,6 @@ const answers = [
     {"key": "Very doubtful", "type": "negative"},
   ];
 
-  function setSession() {
-  
-  }
   
   function getAnswers() {
     const index = Math.floor(Math.random() * answers.length);
@@ -88,24 +85,24 @@ const answers = [
     var overlayCookie = getCookie('showOverlay');
     console.log(overlayCookie);
     if(overlayCookie==="1") {
-      document.getElementById("overlay").style.visibility="hidden";
-      document.getElementById("overlayBox").style.visibility="hidden";
-      document.getElementById("hideOverlay").style.visibility="hidden";  //Overlay is show when there is no Cookie
+      document.getElementById("overlayHelp").style.visibility="hidden";
+      document.getElementById("overlayBoxHelp").style.visibility="hidden";
+      document.getElementById("hideOverlayHelp").style.visibility="hidden";  //Overlay is show when there is no Cookie
     } else {
       showOverlay();
     }}
 
-    function showOverlay() {                                              //Overlay IS show when there is a cookie
-      document.getElementById("overlay").style.visibility="visible";
-      document.getElementById("overlayBox").style.visibility="visible";
-      document.getElementById("hideOverlay").style.visibility="visible";
+    function showOverlayHelp() {                                              //Overlay IS show when there is a cookie
+      document.getElementById("overlayHelp").style.visibility="visible";
+      document.getElementById("overlayBoxHelp").style.visibility="visible";
+      document.getElementById("hideOverlayHelp").style.visibility="visible";
     } 
 
-    function hideOverlay() {
+    function hideOverlayHelp() {
       setCookie("showOverlay", "1", 30);
-      document.getElementById("overlay").style.visibility="hidden";
-      document.getElementById("overlayBox").style.visibility="hidden";
-      document.getElementById("hideOverlay").style.visibility="hidden";
+      document.getElementById("overlayHelp").style.visibility="hidden";
+      document.getElementById("overlayBoxHelp").style.visibility="hidden";
+      document.getElementById("hideOverlayHelp").style.visibility="hidden";
     }
 
   function getCookie(cname) {
@@ -130,13 +127,13 @@ const answers = [
     let expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
-  function showCredits() {
+  function showOverlayCredits() {
     document.getElementById("credits_overlay").style.visibility='visible';
     document.getElementById("credits_box").classList.add('active');
   }
 
 
-  function showStatistics() {
+  function showOverlayStatistics() {
     const localArray = JSON.parse(localStorage.statistics);
     const answersArray = localArray.map(statistic => statistic.answers).flat();
     console.log(answersArray);
