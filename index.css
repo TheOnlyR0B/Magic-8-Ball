@@ -49,10 +49,9 @@ h4 {
 }
 
 #overlayBox {
-    background-color:#c9c9c9;
+    background-color:#e9b6ff;
     width: 300px;
     margin: auto;
-    margin-bottom: 16px;
     text-align: center;
     line-height: 20px;
     font-size: 15px;
@@ -61,7 +60,7 @@ h4 {
   }
 
 #hideOverlay {
-    background-color: #4CAF50;
+    background-color: #3b3bb3;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -71,6 +70,7 @@ h4 {
     font-size: 16px;
     margin: 5px 2px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
   #credits_overlay {
@@ -111,7 +111,7 @@ h4 {
 
 
 button {
-    background-color: #4caf4f;
+    background-color: #3b3bb3;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -156,7 +156,7 @@ button {
 }
 
 #overlayBoxStatistics {
-    background-color:#c9c9c9;
+    background-color:#e9b6ff;
     width: 300px;
     margin: auto;
     margin-bottom: 16px;
