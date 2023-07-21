@@ -105,7 +105,7 @@ const answers = [
       setCookie("showOverlay", "1", 30);
       document.getElementById("overlay").style.visibility="hidden";
       document.getElementById("overlayBox").style.visibility="hidden";
-      document.getElementById("hideOverlay").style.visibility="hidden";  //Overlay is show when there is no Cookie
+      document.getElementById("hideOverlay").style.visibility="hidden";
     }
 
   function getCookie(cname) {
@@ -133,8 +133,32 @@ const answers = [
   function showCredits() {
     document.getElementById("credits_overlay").style.visibility='visible';
     document.getElementById("credits_box").classList.add('active');
-  } 
+  }
 
+
+  function showStatistics() {
+    const localArray = JSON.parse(localStorage.statistics);
+    const answersArray = localArray.map(statistic => statistic.answers).flat();
+    console.log(answersArray);
+    const questionNum = localArray.length;
+    const positiveNum = answersArray.filter(answer => answer.type === 'positive').length;
+    const neutralNum = answersArray.filter(answer => answer.type === 'neutral').length;
+    const negativeNum = answersArray.filter(answer => answer.type === 'negative').length;
+    document.getElementById("questionNum").innerHTML = questionNum;
+    document.getElementById("positiveNum").innerHTML = positiveNum;
+    document.getElementById("neutralNum").innerHTML = neutralNum;
+    document.getElementById("negativeNum").innerHTML = negativeNum;
+    document.getElementById("overlayStatistics").classList.add("active");
+    document.getElementById("overlayStatistics").style.visibility="visible";
+    document.getElementById("overlayBoxStatistics").style.visibility="visible";
+    document.getElementById("hideOverlayStatistics").style.visibility="visible";
+  }
+
+  function hideOverlayStatistics() {
+    document.getElementById("overlayStatistics").style.visibility="hidden";
+    document.getElementById("overlayBoxStatistics").style.visibility="hidden";
+    document.getElementById("hideOverlayStatistics").style.visibility="hidden";
+  }
   function hideCredits() {
     document.getElementById("credits_overlay").style.visibility='hidden';
     document.getElementById("credits_box").classList.remove('active');

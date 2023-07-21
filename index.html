@@ -27,7 +27,7 @@
     </div>
     <div id="credits_overlay">
         <div id="credits_box">
-            <div> 
+            <div>
                 <h1> <strong> THE TEAM </strong></h1>
                 <h3> Jan Deppisch </h3>
                 <h3> Alphan Mongi </h3>
@@ -38,8 +38,36 @@
             </div>
             <button id="hideCredits" onclick="hideCredits()">Do I care tho?</button>
         </div>
-        
+
     </div>
+
+    <div id="overlayStatistics">
+        <div id="overlayBoxStatistics">
+            <div>
+                <h2>Here are your Statistics:</h2>
+                <h3>Questions asked :</h3><label id="questionNum">10</label></br>
+                <h3>
+                    <span id="positive">
+                        Positive Answers :
+                    </span>
+                </h3>
+                <label id="positiveNum">10</label></br>
+                <h3> <span id="neutral" >
+                    Neutral Answers :
+                    </span>
+                </h3>
+                <label id="neutralNum">10</label></br>
+                <h3>
+                    <span id="negative">
+                        Negative Answers :
+                    </span>
+                </h3>
+                <label id="negativeNum">10</label>
+            </div>
+        </div>
+        <button id="hideOverlayStatistics" onclick="hideOverlayStatistics()">close</button>
+    </div>
+
 <div id="headerDiv">
     <div id="switch_dark_light">
         <button onclick="toggleDarkLightMode('dark')" id="darky" class="fokus">
@@ -55,9 +83,14 @@
     <div id="slogan">
         <h1> The Magic 8-Ball </h1>               
     </div>
-    <button onclick="showCredits()" id="credits_button">
-        <img src="Credits.png" width="75" height="75">
-    </button>
+    <div id="credits_statistics">
+        <button onclick="showCredits()" id="credits_button">
+            <img src="Credits.png" width="75" height="75">
+        </button>
+        <button id="statistics" onclick="showStatistics()">
+            <h4>your </br>Statistics</h4>
+        </button>
+    </div>
 </div>
 <div id="main_icons">
     <div id="eight_ball">
