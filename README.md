@@ -153,7 +153,9 @@ What we did:
 
 ### Katharina Day 5
 
-TODO
+What we did:
+- [Finish statistics overlay](https://github.com/TheOnlyR0B/Magic-8-Ball/issues/15)
+- Cleanup some HTML + CSS
 
 Recommended links: TODO
 
