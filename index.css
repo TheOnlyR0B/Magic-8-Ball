@@ -177,6 +177,11 @@ button {
     display: flex;
     z-index: 9999;
     border-style:solid;
+    align-items: center;
+    width: 73px;
+    height: 73px;
+    align-self: center;
+    justify-content: center;
 }
 
 #hideOverlayStatistics {
@@ -317,6 +322,12 @@ button {
     transition-timing-function: ease-in-out;
 }
 
+#credits_statistics {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
 #hideOverlay {
     position: relative;
     margin-left: auto;
@@ -349,3 +360,4 @@ button {
     background-color: transparent;
     z-index: 9999;
 }
+
